@@ -2,22 +2,12 @@
 Twee2::build_config.story_ifid = '902e5b15-3653-431e-a766-b0046cd56ce0'
 Twee2::build_config.story_format = './sugarcube-2'
 
-
-:: Stylesheet [stylesheet]
-
-
-:: StoryDisplayTitle
+:: StoryTitle
 Anchorhold
-
-:: StoryIncludes
-source/widget.tw2 
-
-source/descriptions/loyalty.tw2
 
 :: StoryInit
 <<set $ConfidenceEmperor = 0>>
 <<set $ConfidenceChurch = 0>>
-
 
 
 :: Config [script]
