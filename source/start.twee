@@ -1,39 +1,39 @@
-::Configuration [twee2]
+:: Configuration [twee2]
 Twee2::build_config.story_ifid = '902e5b15-3653-431e-a766-b0046cd56ce0'
 Twee2::build_config.story_format = './sugarcube-2'
 
 
-::Stylesheet [stylesheet]
+:: Stylesheet [stylesheet]
 
 
-::StoryDisplayTitle
+:: StoryDisplayTitle
 Anchorhold
 
-::StoryIncludes
+:: StoryIncludes
 source/widget.tw2 
 
 source/descriptions/loyalty.tw2
 
-::StoryInit
+:: StoryInit
 <<set $ConfidenceEmperor = 0>>
 <<set $ConfidenceChurch = 0>>
 
 
 
-::Config [script]
+:: Config [script]
 Config.debug = true;
 
-::StoryCaption
+:: StoryCaption
 <<DescribeLoyalty $PlayerLoyalty>>
 <<DescribePiety $PlayerPiety>>
 <<DescribePurity $PlayerPurity>>
 
 $LoyaltyDescription
 
-::Start
+:: Start
 [[RandomChapter]]
 
-::RandomChapter
+:: RandomChapter
 <<set $PlayerLoyalty = random(100)>>
 <<set $PlayerPiety = random(100)>>
 <<set $PlayerPurity = random(100)>>
