@@ -1,6 +1,7 @@
-:: Configuration [twee2]
-Twee2::build_config.story_ifid = '902e5b15-3653-431e-a766-b0046cd56ce0'
-Twee2::build_config.story_format = './sugarcube-2'
+:: StoryData
+{
+	"ifid": "93B4E6FA-9060-4D37-99B0-E92AC46DDD49"
+}
 
 :: StoryTitle
 Anchorhold
