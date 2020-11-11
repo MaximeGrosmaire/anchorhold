@@ -1,0 +1,33 @@
+:: StoryData
+{
+	"ifid": "93B4E6FA-9060-4D37-99B0-E92AC46DDD49"
+}
+
+:: StoryTitle
+Anchorhold
+
+:: StoryInit
+<<set $Homeworld = "???">>
+
+:: StoryCaption
+Your Homeworld is <<print $Homeworld>>.
+
+:: Start
+[[SelectHomeworld]]
+
+:: SelectHomeworld
+<<set _ClimatesPassage = Story.get("Climates")>>
+<<set _ClimatesArray = _ClimatesPassage.split("\n")
+
+?? is a <<print _Climates.random()>> planet.
+?? is a <<print _Climates.random()>> planet.
+?? is a <<print _Climates.random()>> planet.
+?? is a <<print _Climates.random()>> planet.
+
+:: Climates
+desert
+desert scrub
+steppe
+moist forest
+wet forest
+rain forest 
