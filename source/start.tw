@@ -16,13 +16,13 @@ Your Homeworld is <<print $Homeworld>>.
 [[SelectHomeworld]]
 
 :: SelectHomeworld
-<<set _ClimatesPassage = Story.get("Climates")>>
-<<set _ClimatesArray = _ClimatesPassage.split("\n")>>
+<<set $ClimatesPassage = Story.get("Climates")>>
+<<set $ClimatesArray = $ClimatesPassage.split("\n")>>
 
-?? is a <<print _Climates.random()>> planet.
-?? is a <<print _Climates.random()>> planet.
-?? is a <<print _Climates.random()>> planet.
-?? is a <<print _Climates.random()>> planet.
+?? is a <<print $ClimatesArray.random()>> planet.
+?? is a <<print $ClimatesArray.random()>> planet.
+?? is a <<print $ClimatesArray.random()>> planet.
+?? is a <<print $ClimatesArray.random()>> planet.
 
 :: Climates
 desert
