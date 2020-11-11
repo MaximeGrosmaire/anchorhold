@@ -17,7 +17,7 @@ Your Homeworld is <<print $Homeworld>>.
 
 :: SelectHomeworld
 <<set _ClimatesPassage = Story.get("Climates")>>
-<<set _ClimatesArray = _ClimatesPassage.split("\n")
+<<set _ClimatesArray = _ClimatesPassage.split("\n")>>
 
 ?? is a <<print _Climates.random()>> planet.
 ?? is a <<print _Climates.random()>> planet.
